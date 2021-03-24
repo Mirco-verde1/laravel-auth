@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,6 +31,9 @@ Auth::routes();
 //rotta pubblica
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('/shoes', 'PublicController@index')->name('public-shoes.home');
 
 
 

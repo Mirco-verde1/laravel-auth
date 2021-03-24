@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-header">{{ __('Dashboard') }}</div>
 
-                  PARTE PRIVATA
+                  questa parte è pubblica
 
             </div>
         </div>

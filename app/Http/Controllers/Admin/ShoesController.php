@@ -20,7 +20,9 @@ class ShoesController extends Controller
     public function index()
     {
 
-        return redirect()->route('shoes.home');
+
+        $shoes = Shoe::all();
+        return view('shoes.index', compact('shoes'));
      }
 
 
