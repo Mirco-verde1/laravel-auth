@@ -10,7 +10,7 @@ class PublicController extends Controller
 {
     public function index()
     {
-        $shoes = Shoe::all();
-        return view('shoes.home', compact('shoes'));
+
+        return view('shoes.home');
     }
 }

@@ -22,7 +22,7 @@ class ShoesController extends Controller
 
 
         $shoes = Shoe::all();
-        return view('shoes.index', compact('shoes'));
+        return view('shoes.privatehome', compact('shoes'));
      }
 
 

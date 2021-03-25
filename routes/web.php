@@ -30,10 +30,10 @@ Auth::routes();
 
 //rotta pubblica
 
-Route::get('/home', 'HomeController@index')->name('home');
 
 
-Route::get('/shoes', 'PublicController@index')->name('public-shoes.home');
+
+Route::get('/home', 'PublicController@index')->name('public.shoes.home');
 
 
 
