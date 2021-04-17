@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ChartController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,15 +31,14 @@ Auth::routes();
 //rotta pubblica
 
 
-
-
 Route::get('/home', 'PublicController@index')->name('public.shoes.home');
 
-
+Route::get('chart-js', 'ChartController@index');
 
 Route::prefix('admin')
 ->namespace('Admin')
 ->middleware('auth')
 ->group(function () {
     Route::resource('/shoes', ShoesController::class);
+    return view('create');
 });
